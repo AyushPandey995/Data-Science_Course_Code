@@ -30,7 +30,7 @@ alter table students_2026 drop column Email; -- Used to drop coumn from the tabl
 alter table students_2026 add column Mobile_No int;  -- Used to add colum from the table
 alter table students_2026 add column Stream varchar(50) not null;
 
-alter table students_2026 modify column Full_Name varchar(50) default 'Empty'; -- Used to modify datatype ans constraints of column
+alter table students_2026 modify column Full_Name varchar(50) default 'Empty'; -- Used to modify datatype and constraints of column
 
 alter table students_2026 modify column Full_Name varchar(50) after Stream; -- Change the place of the table
 alter table students_2026 modify column Full_Name varchar(50) after Roll_No;

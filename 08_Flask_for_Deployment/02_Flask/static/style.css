@@ -1,0 +1,15 @@
+        table{
+            border-spacing: 20px;
+        }
+
+        .tools{
+            color: blueviolet;
+        }
+        p.about{
+            color: skyblue;
+            font-size: 22px;
+        }
+        .function{
+            display: flex;
+            align-items: center;
+        }

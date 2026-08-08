@@ -1,0 +1,1 @@
+alert("This is possible because of JavaScript")

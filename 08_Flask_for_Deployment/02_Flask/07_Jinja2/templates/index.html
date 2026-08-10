@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinja2</title>
+</head>
+<body>
+    <p>Hii everyone, my name is {{name}},I am persuing my Bachlors of Eangineering degree in {{stream}} from {{college}}, {{city}} </p><br>
+    <h3>My primary language is {{lang}}</h3> <!-- This is how we can use variable in html -->
+    <!-- Using Jinja2 -->
+      <!-- We can write jinja code by ty7ping 'j.f' -> to get suggestion for 'for' loop in jinja, similarly we can use different python functionality in html using jinja -->
+     {% for item in lucky %}
+        <p>{{item}}</p>
+     {% endfor %}
+
+     {{footer | safe}} <!-- We have to type '|safe' after variuable name to execute html from string written in the python main code -->
+    
+</body>
+</html>

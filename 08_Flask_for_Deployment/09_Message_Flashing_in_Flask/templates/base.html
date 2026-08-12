@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+  </head>
+  <body>
+    <nav>
+        <i>This is my navbar</i><br><br>
+
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+          {% for msg in messages %}
+            <li>
+              {{msg}}
+              <button onclick="this.parentElement.style.display = 'none'">x</button> <!--copied from chatgpt -->
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %} 
+    </nav>
+      
+    <div id="content">{% block content %}{% endblock %}</div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <div id="footer">
+        &copy; Copyright 2026 by{% block footer %}
+       <a href="" target="_blank">github</a>.
+      {% endblock %}
+    </div>
+  </body>
+</html>

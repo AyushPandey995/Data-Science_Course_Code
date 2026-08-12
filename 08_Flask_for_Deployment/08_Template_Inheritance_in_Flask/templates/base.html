@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+  </head>
+  <body>
+    <nav>
+        <i>This is my navbar</i><br><br>
+    </nav>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <div id="footer">
+        &copy; Copyright 2026 by{% block footer %}
+       <a href="" target="_blank">github</a>.
+      {% endblock %}
+    </div>
+  </body>
+</html>
